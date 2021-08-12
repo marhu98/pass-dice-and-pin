@@ -1,6 +1,6 @@
 # Pass extensions to generate pin and dice passwords
 
-This is an extension of Pass, the Unix password manager: (https://www.passwordstore.org/) [] 
+This is an extension of Pass, the Unix password manager: [Pass](https://www.passwordstore.org/) 
 Written in rust.
 
 
