@@ -1,12 +1,12 @@
 use std::fs::File;
 use rand::distributions::{Distribution, Uniform};
-use rand::Rng;
-use std::io::prelude::*;
+//use rand::Rng;
+//use std::io::prelude::*;
 use std::io::{self, BufRead};
 use std::path::Path;
 use std::collections::HashMap;
 fn main()  {
-    if let Ok(lines) = read_lines("/Users/Paco/.scripts/wordlist.txt") {
+    if let Ok(lines) = read_lines("/etc/wordlist.txt") {
         let mut words = HashMap::new();
         for line in lines {
             if let Ok(ip) = line {
@@ -17,7 +17,7 @@ fn main()  {
                     );
             }
         }
-        let numbers: Vec<u64>;
+        //let numbers: Vec<u64>;
         let mut rng = rand::thread_rng();
         let cast = Uniform::from(1..7);
         let mut result:String = "".to_string();
